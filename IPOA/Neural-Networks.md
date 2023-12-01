@@ -101,7 +101,7 @@ graph LR
 I_BP([S]):::style_bp
 E_BP([E]):::style_bp
 Loss_Function[Loss Function]:::style_bp
-Loss_Function_Explained[[
+Loss_Function_Explained[["
     explanation:
     - actual: current activation value \ output
     - expected: expected activation value
@@ -111,9 +111,9 @@ Loss_Function_Explained[[
     functions:
     - mean squared error
     - cross entropy
-]]:::style_bp
+"]]:::style_bp
 Optimizer_Function[Optimizer Function]:::style_bp
-Optimizer_Function_Explained[[
+Optimizer_Function_Explained[["
     explanation:
     adjust the weights and biases of the model
 
@@ -121,7 +121,7 @@ Optimizer_Function_Explained[[
     - gradient descent
     - stochastic gradient descent
     - mini-batch gradient descent
-]]:::style_bp
+"]]:::style_bp
 
 %% - Subgraph
 subgraph BACKWARD_PROPAGATION[Backward Propagation]
@@ -148,7 +148,7 @@ Loss_Function_Explained --- I_BP
 I_FP([S]):::style_fp
 E_FP([E]):::style_fp
 Activation_Function[Activation Function]:::style_fp
-Activation_Function_Explained[[
+Activation_Function_Explained[["
     explanation:
     - weighted sum: calculate the weighted sum of the neuron based on the weights and biases with other neurons
     - activation function: apply an activation function to the weighted sum to cal
@@ -157,7 +157,7 @@ Activation_Function_Explained[[
     - sigmoid
     - tanh
     - relu
-]]:::style_fp
+"]]:::style_fp
 
 %% - Subgraph
 subgraph FORWARD_PROPAGATION[Forward Propagation]
